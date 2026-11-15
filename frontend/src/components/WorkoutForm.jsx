@@ -18,7 +18,7 @@ const WorkoutForm = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/workouts",
+        "https://task35-workout-buddy.onrender.com/api/workouts",
         {
           method: "POST",
           body: JSON.stringify(workout),

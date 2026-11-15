@@ -7,7 +7,7 @@ const WorkoutDetails = ({ workout }) => {
   const handleDelete = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/workouts/${workout._id}`,
+        `https://task35-workout-buddy.onrender.com/api/workouts/${workout._id}`
         {
           method: "DELETE",
         }

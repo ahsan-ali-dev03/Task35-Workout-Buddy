@@ -11,7 +11,7 @@ function App() {
     const fetchWorkouts = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/workouts"
+        "https://task35-workout-buddy.onrender.com/api/workouts"
         );
 
         const json = await response.json();
