@@ -1,0 +1,146 @@
+.App {
+  min-height: 100vh;
+  background: #f1f1f1;
+}
+
+header {
+  background: white;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 28px;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.workout-card {
+  position: relative;
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.workout-card h4 {
+  margin: 0 0 15px;
+  color: #2dbb8a;
+  font-size: 20px;
+}
+
+.workout-card p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.created {
+  color: #888 !important;
+  font-size: 13px !important;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #ffdddd;
+}
+
+.create-form {
+  background: white;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.create-form h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.create-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.create-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.create-form input.error {
+  border: 2px solid #e7195a;
+}
+
+.create-form button {
+  background: #2dbb8a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.create-form button:hover {
+  opacity: 0.9;
+}
+
+.form-error {
+  margin-top: 15px;
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid #e7195a;
+  color: #e7195a;
+  border-radius: 4px;
+}
+
+.no-workouts {
+  text-align: center;
+  color: #777;
+  padding: 30px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .home {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+}
